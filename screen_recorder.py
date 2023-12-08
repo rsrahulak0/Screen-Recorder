@@ -23,13 +23,13 @@ def stop_rec():
 rec = pyscreenrec.ScreenRecorder()
 
 #icon
-image_icon = PhotoImage(file="icon.png")
+image_icon = PhotoImage(file="resources/icon.png")
 root.iconphoto(False, image_icon)
 
 #heading
 lbl = Label(root, text="Screen Recorder", bg="#fff", font="arial 15 bold")
 lbl.pack(pady=20)
-image3 = PhotoImage(file="recording.png")
+image3 = PhotoImage(file="resources/recording.png")
 Label(root, image=image3, bd=0).pack(pady=0)
 
 #entry
@@ -42,15 +42,15 @@ Filename.set("recording25")
 start = Button(root, text="Start", font="arial 22", bd=0, command=start_rec)
 start.place(x=147, y=250)
 
-image4 = PhotoImage(file="pause.png")
+image4 = PhotoImage(file="resources/pause.png")
 pause = Button(root, image=image4, bd=0, bg="#fff", command=pause_rec)
 pause.place(x=70, y=405)
 
-image5 = PhotoImage(file="resume.png")
+image5 = PhotoImage(file="resources/resume.png")
 pause = Button(root, image=image5, bd=0, bg="#fff", command=resume_rec)
 pause.place(x=170, y=400)
 
-image6 = PhotoImage(file="stop.png")
+image6 = PhotoImage(file="resources/stop.png")
 pause = Button(root, image=image6, bd=0, bg="#fff", command=stop_rec)
 pause.place(x=280, y=405)
 
